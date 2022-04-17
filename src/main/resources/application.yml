@@ -1,29 +1,28 @@
-
 spring:
   datasource:
-    #  Çı¶¯
+    #  é©±åŠ¨
     driver-class-name: org.h2.Driver
-    # h2 ÄÚ´æÊı¾İ¿â ÄÚ´æÄ£Ê½Á¬½ÓÅäÖÃ ¿âÃû: mybatis
+    # h2 å†…å­˜æ•°æ®åº“ å†…å­˜æ¨¡å¼è¿æ¥é…ç½® åº“å: mybatis
     url: jdbc:h2:mem:testdb
     username: h2
     password: h2
-    # ³õÊ¼»¯Êı¾İ±í DDL
+    # åˆå§‹åŒ–æ•°æ®è¡¨ DDL
     schema: classpath:sql/init.sql
-    #  ³õÊ¼»¯Êı¾İ DML
+    #  åˆå§‹åŒ–æ•°æ® DML
     data: classpath:sql/data.sql
 
     jpa:
       show-sql: true
   h2:
-    #    ¿ªÆôconsole ·ÃÎÊ Ä¬ÈÏfalse
+    #    å¼€å¯console è®¿é—® é»˜è®¤false
     console:
       enabled: true
       settings:
-        #      ¿ªÆôh2 console ¸ú×Ù ·½±ãµ÷ÊÔ  Ä¬ÈÏ false
+        #      å¼€å¯h2 console è·Ÿè¸ª æ–¹ä¾¿è°ƒè¯•  é»˜è®¤ false
         trace: true
-        #      ÔÊĞíconsole Ô¶³Ì·ÃÎÊ Ä¬ÈÏfalse
+        #      å…è®¸console è¿œç¨‹è®¿é—® é»˜è®¤false
         web-allow-others: true
-      #  h2 ·ÃÎÊÂ·¾¶ÉÏÏÂÎÄ
+      #  h2 è®¿é—®è·¯å¾„ä¸Šä¸‹æ–‡
       path: /h2-console
 
 mybatis:

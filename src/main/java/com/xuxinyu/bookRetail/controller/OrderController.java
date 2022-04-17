@@ -111,7 +111,7 @@ public class OrderController {
         outputBean.setCode(CodeConstants.Basic.ZERO_CODE);
         outputBean.setMsg(CodeConstants.Basic.SUCCESS);
         Map<String,Object> order = orderService.getOrderByOrderId(orderId);
-        List<Map<String,Object>> orders = new ArrayList<>();
+        List<Map<String,Object>> orders = new ArrayList<Map<String,Object>>();
         if (null != order){
             orders.add(order);
             outputBean.setData(orders);
